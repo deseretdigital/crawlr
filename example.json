@@ -1,0 +1,23 @@
+{
+	"startUrl": "http://www.example.com/",
+	"dropHttps": true,
+	"allowedDomains": {
+		"www.example.com": true,
+		"www2.example.com": true
+	},
+	"rewriteDomains": {
+		"example.com": "www.example.com"
+	},
+	"filteredUrls": [
+		"\\.mp4",
+		"\\.pdf"
+	],
+	"droppedParameters": [
+		"title",
+		"cid"
+	],
+	"requiredPatterns": {
+		"ComScore": "_comscore",
+		"Quantcast": "_qevents"
+	}
+}
